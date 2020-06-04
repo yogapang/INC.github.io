@@ -497,7 +497,7 @@
 				manual();
 			}
 			function bro(){
-				namaku = $(".pengembang").text();
+				namaku = $(".ai").text();
 			    var hex, i;
 
 			    var result = "";
@@ -511,7 +511,7 @@
 			}
 			function specialEffects(){
 				if(localStorage.getItem("manualColor")=="#4c1130"){
-					setTimeout(function() { createNote("kamu selalu semangat yaa :v"); }, 5000);
+					setTimeout(function() { createNote("Mangat Din ngepush course javascriptnya :v"); }, 5000);
 				}
 				else if(localStorage.getItem("manualColor")=="#000000"){
 					setTimeout(function() { createNote("Buat belajar bro, bukan buat neko neko :v"); }, 5000);
@@ -872,43 +872,43 @@
 				S=s;
 
 				if (H<5){
-					txt='Percayalah, kau selalu ada di doa sepertiga malamku:)';
+					txt='Have a Good Night:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<9){
-					txt='SELAMAT MEMULAI HARIMU:)';
+					txt='Good Morning You:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<12){
-					txt='HAVE A NICE DAY:)';
+					txt='IH WES BEDUG YAA:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<16){
-					txt='TIDUR SIANG DULU GAPAPA:)';
+					txt='Good Afternoon Dear:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<19){
-					txt='SEMOGA KAU BAIK BAIK SAJA:)';
+					txt='Good Afternoon, Take a Rest:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<23){
-					txt='Selamat Sore Sweetie:)';
+					txt='Good Evening Sweetie:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<=24){
-					txt='Waktunya Tidur ini, Jangan Begadang:)';
+					txt='Time to Sleep, Good Night:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
@@ -977,28 +977,28 @@
 
 			const quotes = [
 			  {
-			    "quote": "Gimana Hari ini, sehat kan??",
-			    "source": "Yoga Pangestu"
+			    "quote": "Bila kau tak tahan lelahnya belajar, maka kau harus tahan menanggung perihnya kebodohan",
+			    "source": "Imam Syafi'i"
 			  },
 			  {
-			    "quote": "HAI AKU DISINI",
-			    "source": "Yoga Pangestu"
+			    "quote": "Just because I carry it all so well doesn't mean it's not heavy",
+			    "source": "Andika Sujanadi"
 			  },
 			  {
 			    "quote": "Semesta memiliki alurnya masing-masing",
-			    "source": "Yoga Pangestu"
+			    "source": "Andika Sujanadi"
 			  },
 			  {
 			    "quote": "You don't lose, You learn",
-			    "source": "Yoga Pangestu"
+			    "source": "Andika Sujanadi"
 			  },
 			  {
 			    "quote": "I own my own life and my own decission",
-			    "source": "Yoga Pangestu"
+			    "source": "Andika Sujanadi"
 			  },
 			  {
 			    "quote": "Every failure, rejection, betrayal should be the reason for you to come back stronger in life by working on goals and achiving them",
-			    "source": "Yoga Pangestu"
+			    "source": "Andika Sujanadi"
 			  },
 			  {
 			    "quote": "Masa lalu dan frustasi merupakan fondasi dasar untuk menciptakan kembali kehidupan baru yang lebih baik",
@@ -1006,26 +1006,26 @@
 			  },
 			  {
 			    "quote": "Ada kalimat yang ingin aku dapatkan dari dia tapi aku dapat dari orang lain",
-			    "source": "Yoga Pangestu"
+			    "source": "Andika Sujanadi"
 			  },
 			  {
 			    "quote": "People doesn't want to end their life, they just wanted to end the pain",
-			    "source": "Yoga Pangestu"
+			    "source": "Andika Sujanadi"
 			  },
 			  {
 			    "quote": "Need someone to talk about life, but sitting alone is much better",
-			    "source": "Yoga Pangestu"
+			    "source": "Andika Sujanadi"
 			  },
 			  {
 			    "quote": "Seorang bahagia bukan karena semua benar dalam hidupnya, tapi sikap terhadap hidupnya yang benar",
 			    "source": "Sundar Pichai"
 			  },
 			  {
-			    "quote": "Never give Up yaa",
-			    "source": " Yoga Pangestu"
+			    "quote": "Jika hari ini harus lebih baik darpada hari kemarin dan hari esok lebih baik daripada hari ini maka kelahiranmu adalah hari terburuk yang pernah ada",
+			    "source": "Om Hell"
 			  },
 			]
-			setInterval(randomQuote, 10000);
+			setInterval(randomQuote, 60000);
 			function randomQuote(){
 			  let random = quotes[Math.floor(Math.random() * quotes.length)];
 			  quotation.innerText = `"${random.quote}"`;
